@@ -16,6 +16,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="_ATTINY85_Bodenfeuchte_Sensor_Tiny_Version.ino" />
+    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="__vm\._ATTINY85_Bodenfeuchte_Sensor_Tiny_Version.vsarduino.h">

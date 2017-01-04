@@ -74,6 +74,7 @@
     <ProjectCapability Include="VisualMicro" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="README.md" />
     <None Include="_ATTINY85_Bodenfeuchte_Sensor_Tiny_Version.ino">
       <FileType>CppCode</FileType>
     </None>
