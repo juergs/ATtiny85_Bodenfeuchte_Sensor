@@ -148,6 +148,8 @@ volatile float            bodenfeuchte			= 0.0;
 volatile float            batteriespannung		= 0.0;
 long					  randomNumber			= 0;
 
+long test = 0 ; 
+
 //--- serial msgbuffer 
 char *  msgbuf[100];
 

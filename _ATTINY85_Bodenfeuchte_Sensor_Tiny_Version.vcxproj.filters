@@ -21,5 +21,8 @@
     <ClInclude Include="__vm\._ATTINY85_Bodenfeuchte_Sensor_Tiny_Version.vsarduino.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="__vm\.ATtiny85_Bodenfeuchte_Sensor.vsarduino.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
