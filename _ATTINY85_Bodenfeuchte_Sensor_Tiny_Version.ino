@@ -68,9 +68,9 @@
 *****************************************************************************************************************************************************
 */
 
-/*
+/**/
 #define USE_LOCAL_ARDUINO_LIBRARIES
-*/
+/**/
 
 #ifdef USE_LOCAL_ARDUINO_LIBRARIES
 	#include "LaCrosse.h"
@@ -87,6 +87,7 @@
 
 #define SN "Bodenfeuchte-Sensor-433-ATtiny85-Version"
 #define SV "1.3 vom 30.10.2016"
+#define SV "1.4 vom 29.01.2017"
 
 //--- conditionals
 //--- zum aktivieren Kommentierung entfernen 
@@ -203,6 +204,8 @@ void loop()
 	//--- set attiny back to normal operation mode
 	pinMode(DALLAS_SENSOR_PIN, OUTPUT);
 	LaCrosse.setTxPinMode(OUTPUT);
+
+
 	power_adc_enable(); 
 
 	delay(500); // ms, needed for settling DS18B20 

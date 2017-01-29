@@ -47,8 +47,8 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Users\Jürgen\Documents\Arduino\libraries\attiny_bodenfeuchte_sensor;C:\Users\Jürgen\Documents\Arduino\libraries\attiny_bodenfeuchte_sensor\utility;C:\Users\Jürgen\Documents\Arduino\libraries\LaCrosse;C:\Users\Jürgen\Documents\Arduino\libraries\LaCrosse\utility;C:\Users\Jürgen\Documents\Arduino\libraries\Narcoleptic;C:\Users\Jürgen\Documents\Arduino\libraries\Narcoleptic\utility;C:\Users\Jürgen\Documents\Arduino\libraries\OneWire;C:\Users\Jürgen\Documents\Arduino\libraries\OneWire\utility;D:\Program Files (x86)\Arduino\arduino-1.6.12\libraries;D:\Program Files (x86)\Arduino\arduino-1.6.12\hardware\arduino\avr\libraries;C:\Users\Jürgen\AppData\Local\arduino15\packages\attiny\hardware\avr\1.0.2\libraries;C:\Users\Jürgen\Documents\Arduino\libraries;D:\Program Files (x86)\Arduino\arduino-1.6.12\hardware\arduino\avr\cores\arduino;C:\Users\Jürgen\AppData\Local\arduino15\packages\attiny\hardware\avr\1.0.2\variants\tiny8;C:\Users\Jürgen\Documents\GitHub\ATtiny85_Bodenfeuchte_Sensor;C:\Users\Jürgen\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\4.9.2-atmel3.5.3-arduino\avr\include\;C:\Users\Jürgen\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\4.9.2-atmel3.5.3-arduino\avr\include\avr\;C:\Users\Jürgen\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\4.9.2-atmel3.5.3-arduino\lib\gcc\avr\4.9.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>C:\Users\Jürgen\Documents\GitHub\ATtiny85_Bodenfeuchte_Sensor\__vm\.ATtiny85_Bodenfeuchte_Sensor.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\Arduino\libraries\attiny_bodenfeuchte_sensor;D:\Program Files (x86)\Arduino\arduino-1.6.12\libraries;D:\Program Files (x86)\Arduino\arduino-1.6.12\hardware\arduino\avr\libraries;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\attiny\hardware\avr\1.0.2\libraries;$(ProjectDir)..\..\Arduino\libraries;D:\Program Files (x86)\Arduino\arduino-1.6.12\hardware\arduino\avr\cores\arduino;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\attiny\hardware\avr\1.0.2\variants\tiny8;$(ProjectDir)..\ATtiny85_Bodenfeuchte_Sensor;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\4.9.2-atmel3.5.3-arduino\avr\include\;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\4.9.2-atmel3.5.3-arduino\avr\include\avr\;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\4.9.2-atmel3.5.3-arduino\lib\gcc\avr\4.9.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ProjectDir)__vm\.ATtiny85_Bodenfeuchte_Sensor.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
       <PreprocessorDefinitions>__AVR_ATtiny85__;__AVR_ATTINY85__;F_CPU=8000000L;ARDUINO=106012;ARDUINO_attiny;ARDUINO_ARCH_AVR;__cplusplus=201103L;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
@@ -59,10 +59,14 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <Optimization>MaxSpeed</Optimization>
+      <Optimization>Disabled</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\Arduino\libraries\attiny_bodenfeuchte_sensor;D:\Program Files (x86)\Arduino\arduino-1.6.12\libraries;D:\Program Files (x86)\Arduino\arduino-1.6.12\hardware\arduino\avr\libraries;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\attiny\hardware\avr\1.0.2\libraries;$(ProjectDir)..\..\Arduino\libraries;D:\Program Files (x86)\Arduino\arduino-1.6.12\hardware\arduino\avr\cores\arduino;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\attiny\hardware\avr\1.0.2\variants\tiny8;$(ProjectDir)..\ATtiny85_Bodenfeuchte_Sensor;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\4.9.2-atmel3.5.3-arduino\avr\include\;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\4.9.2-atmel3.5.3-arduino\avr\include\avr\;$(ProjectDir)..\..\..\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\4.9.2-atmel3.5.3-arduino\lib\gcc\avr\4.9.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ProjectDir)__vm\.ATtiny85_Bodenfeuchte_Sensor.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>__AVR_ATtiny85__;__AVR_ATTINY85__;F_CPU=8000000L;ARDUINO=106012;ARDUINO_attiny;ARDUINO_ARCH_AVR;__cplusplus=201103L;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -80,8 +84,16 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="LaCrosse.h" />
+    <ClInclude Include="Narcoleptic.h" />
+    <ClInclude Include="OneWire.h" />
     <ClInclude Include="__vm\.ATtiny85_Bodenfeuchte_Sensor.vsarduino.h" />
     <ClInclude Include="__vm\._ATTINY85_Bodenfeuchte_Sensor_Tiny_Version.vsarduino.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LaCrosse.cpp" />
+    <ClCompile Include="Narcoleptic.cpp" />
+    <ClCompile Include="OneWire.cpp" />
   </ItemGroup>
   <PropertyGroup>
     <DebuggerFlavor>VisualMicroDebugger</DebuggerFlavor>
